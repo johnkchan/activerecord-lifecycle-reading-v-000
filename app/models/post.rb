@@ -3,6 +3,10 @@ class Post < ActiveRecord::Base
   belongs_to :author
   validate :is_title_case
   before_validation :make_title_case
+<<<<<<< HEAD
+=======
+  before_save :email_author_about_post
+>>>>>>> c55d83debf601d0bb048e749e40de8846934f40c
 
   private
 
